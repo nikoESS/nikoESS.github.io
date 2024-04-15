@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doors</title>
+  <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="src/css/bootstrap-grid.min.css">
+  <script src="https://kit.fontawesome.com/13f81d05ea.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+      <ul class="menu">
+         <li class="menu_item"><a href="#main" class="menu_link">Главная</a></li>
+         <li class="menu_item"><a href="#cen" class="menu_link">Почему мы</a></li>
+         <li class="menu_item"><a href="#short" class="menu_link">Услуги</a></li>
+         <li class="menu_item"><a href="#innerpad" class="menu_link">Немного цифр</a></li>
+         <li class="menu_item"><a href="#main" class="menu_link">Контакты</a></li>
+      </ul>
+      </div> 
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </nav>
+    <div class="subheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 offset-md-1">
+            <a href="#" class="subheader_logo"><img src="src/img/logotip.png" alt="logo"></a>
+            <div class="subheader_official">Официальный партнер в Ессентуках</div>
+          </div>
+          <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+            <div class="subheader_call">Звоните нам ежедневно</div>
+            <a href="tel:+79187740588" class="subheader_phone">8 918 774 05 88</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="tel:+79187740588" class="xs-visible subheader_phone">8 918 774 05 88</a>
+            <button id="callButton" class="subheader_btn" onclick="makeCall()">заказать звонок</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script>
+      function makeCall() {
+          window.location.href = 'tel:+79187740588';
+      }
+      document.getElementById('callButton').addEventListener('click', makeCall);
+  </script>  
+  </header>
+  <section class="promo" id="main" style="min-height: 800px; background: url(src/img/mainer.jpg) center center/cover no-repeat; padding: 150px 0 135px 0;"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
+          <h1 class="promo_header">Установка дверей по КМВ</h1>
+          <h2 class="promo_subheader">Установка межкомнатных и входных дверей,монтаж и демонтаж. Установка дабора, наличника, дверной ручки и др.</h2>
+          <div class="promo_descr">Выезд на дом в любое время</div>
+          <button id="submitButton" class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function makeCall() {
+          window.location.href = 'tel:+79187740588';
+      }
+      function submitRequest() {
+          makeCall(); 
+          alert('Заявка успешно отправлена!');
+      }
+      document.getElementById('submitButton').addEventListener('click', submitRequest);
+  </script>
+  </section>
+  <section class="cen" id="cen">
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="iconcen">
+              <img src="src/img/pnghand.com.png" alt="hand" class="first">
+              <div class="title">Доступные расценки</div>
+              <div class="titletwo">Мы предлагаем гибкие условия ценовых решений</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="iconcen">
+              <img src="src/img/free-icon-quality.png" alt="door" class="second">
+              <div class="title">Гарантия качества</div>
+              <div class="titletwo">Используется высокоточные инструменты</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="iconcen">
+              <img src="src/img/free-icon-consultation.png" alt="car" class="third">
+              <div class="title">Предварительная консультация</div>
+              <div class="titletwo">Помогаем в выборе материалов и комплектующих</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="short" id="short">
+    <div class="container">
+      <div class="label">Выберите необходимую услугу</div>
+      <div class="title">Услуги и расценки</div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="short_item short_item_1">
+            <img src="src/img/one_dver.jpg" alt="Экспресс-мойка">
+            <div class="short_item_content">
+              <span class="first_title">Установка межкомнатных дверей</span><br><br><div class="two_title">Профессиональная установка межкомнатных дверей под ключ</div><br>
+              <div class="price"><strong><span>Стоимость – от 3500 руб</span></strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="short_item short_item_1">
+            <img src="src/img/two_dver.jpg" alt="Экспресс-мойка">
+            <div class="short_item_content">
+              <span class="first_title">Установка раздвижных дверей</span><br><br><div class="two_title">Мы устанавливаем жлезные, деревянные, сейфовые, раздвижные двери</div> <br>
+              <div class="price"><strong><span>Стоимость – от 5000 руб</span></strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="short_item short_item_1">
+            <img src="src/img/three_dver.jpg" alt="Экспресс-мойка">
+            <div class="short_item_content">
+              <span class="first_title">Монтаж доборов</span><br><br><div class="two_title">Мы выполняем монтаж доборов любой сложности с вниманием к деталям</div> <br>
+              <div class="price"><strong><span>Стоимость – от 2000 руб</span></strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="short_item short_item_1">
+            <img src="src/img/four_dver.jpg" alt="Экспресс-мойка">
+            <div class="short_item_content">
+              <span class="first_title">Установка дверных коробок</span><br><br><div class="two_title">Мы проводим установку дверных коробок с соблюдением всех технических требований, обеспечивая прочное и надежное крепление для вашей двери</div> <br>
+              <div class="price"><strong><span>Стоимость – от 1000 руб</span></strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="short_item short_item_1">
+            <img src="src/img/five_dver.jpg" alt="Экспресс-мойка">
+            <div class="short_item_content">
+              <span class="first_title">Установка дверных наличников</span><br><br><div class="two_title">Мы профессионально устанавливаем дверные наличники, создавая завершенный и стильный облик вашей двери</div><br><br>
+              <div class="price"><strong><span>Стоимость – от 1000 руб</span></strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="short_item short_item_1">
+            <img src="src/img/six_dver.jpg" alt="Экспресс-мойка">
+            <div class="short_item_content">
+              <span class="first_title">Врезка дверных замков</span><br><br><div class="two_title">Мы осуществим врезку дверных замков с высокой точностью и аккуратностью, гарантируя безопасность и надежность вашего жилья или офиса</div> <br>
+              <div class="price"><strong><span>Стоимость – от 1000 руб</span></strong></div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+</section>
+<div class="img_innerpad" id="innerpad">
+  <header>
+    <h1>Немного цифр</h1>
+ </header>
+<section class="contentdver">
+    <div class="icons">
+        <div class="icondver">
+            <img src="src/img/icondverone.png" alt="Icon 1">
+            <strong><p>Опыт работы более 15 лет</p></strong>
+        </div>
+        <div class="icondver">
+            <img src="src/img/icondvertwo.png" alt="Icon 2">
+            <strong><p>Установленно более 1000 дверей</p></strong>
+        </div>
+        <div class="icondver">
+            <img src="src/img/icondverthree.png" alt="Icon 3">
+            <strong><p>Сотни довольных клиентов</p></strong>
+        </div>
+    </div>
+      <div class="main_image">
+        <img src="src/img/dverzero.png" alt="Main Image">
+      </div>
+</section>
+</div>
+<footer id="footer">
+  <div class="container_4">
+    <div class="circle-container">
+      <div class="circle"><i class="fa-brands fa-facebook-f" style="color: #080808;"></i></div>
+      <div class="circle"><i class="fa-brands fa-twitter" style="color: #000000;"></i></div>
+      <div class="circle"><i class="fa-brands fa-linkedin-in" style="color: #000000;"></i></div>
+      <div class="circle"><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></div>
+    </div>
+    <div class="first_center-icon">
+      <img src="src/img/icon_apple.png" alt="apple store">
+    </div>
+    <div class="second_center-icon">
+      <img src="src/img/icon_googleplay.png" alt="google play">
+    </div>
+    <div class="third_center-icon">
+      <img src="src/img/icon_windows.png" alt="galaxy store">
+    </div>
+    <div class="bottom-text">
+      <h3>
+        <a href="#main">На главную</a>
+        <a href="#short">услуги</a>
+        <a href="#innerpad">немного цифр</a>
+      </h3>
+      <p class="gray-text">
+        <a href="https://vk.com/alex_mauzer">Центр поддержки</a>
+        <span class="copyright">2024 Все права защищены</span>
+        <a href="https://vk.com/alex_mauzer">Разработчики</a> 
+        <a href="#main">О нас</a>
+      </p>
+    </div>
+  </div>
+</footer> 
+<script src="src/js/script.js"></script>
+</body>
+</html>
